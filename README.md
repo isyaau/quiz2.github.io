@@ -1,1 +1,1 @@
-# kuis2.github.io
+# quiz2.github.io
