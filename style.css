@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to top right, darken(dodgerblue, 10%) 0%, dodgerblue 100%);
+}
+#quiz1 {
+    width: 560px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 3px;
+}
