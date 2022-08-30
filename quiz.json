@@ -1,0 +1,83 @@
+[{
+	"intro": {
+		"title": "Geography Quiz",
+		"description": "Test your geography knowledge with this capital cities quiz"
+	},
+	"questions": [{
+		"question": "Budapest is the capital of which state?",
+		"description": null,
+		"answers": [{
+			"answer": "Hungary",
+			"alert": "<strong>Correct!</strong>",
+			"true": 1
+		},
+		{
+			"answer": "Slovenia",
+			"alert": "<strong>Wrong!</strong> Budapest is the capital of Hungary.",
+			"true": 0
+		},
+		{
+			"answer": "Slovakia",
+			"alert": "<strong>Wrong!</strong> Budapest is the capital of Hungary.",
+			"true": 0
+		}]
+	},
+	{
+		"question": "Which is the capital of Argentina?",
+		"description": null,
+		"answers": [{
+			"answer": "Montevideo",
+			"alert": "<strong>Wrong!</strong> Buenos Aires is the capital of Argentina",
+			"true": 0
+		},
+		{
+			"answer": "Buenos Aires",
+			"alert": "<strong>Correct!</strong>",
+			"true": 1
+		},
+		{
+			"answer": "La Paz",
+			"alert": "<strong>Wrong!</strong> Buenos Aires is the capital of Argentina",
+			"true": 0
+		}]
+	},
+	{
+		"question": "The capital of Thailand is?",
+		"description": null,
+		"answers": [{
+			"answer": "Bangkok",
+			"alert": "<strong>Correct!</strong>",
+			"true": 1
+		},
+		{
+			"answer": "Hanoi",
+			"alert": "<strong>Wrong!</strong> The capital of Thailand is Bangkok",
+			"true": 0
+		},
+		{
+			"answer": "Katmandu",
+			"alert": "<strong>Wrong!</strong> The capital of Thailand is Bangkok",
+			"true": 0
+		}]
+	},
+	{
+
+		"question": "The capital of Lebanon is?",
+		"description": null,
+		"answers": [{
+			"answer": "Doha",
+			"alert": "<strong>Wrong!</strong> The capital of Lebanon is Beirut",
+			"true": 0
+		},
+		{
+			"answer": "Beirut",
+			"alert": "<strong>Correct!</strong>",
+			"true": 1
+		},
+		{
+			"answer": "Amman",
+			"alert": "<strong>Wrong!</strong> The capital of Lebanon is Beirut",
+			"true": 0
+		}]
+	}]
+}]
