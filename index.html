@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <script type="text/javascript" src="https://storage.googleapis.com/chydlx/plugins/dlx-quiz/js/main.js"></script>
+    <style type="text/css">
+.container{display:flex;align-items:center;justify-content:center;background:#eee;padding:3rem 2rem;margin:2em 0;}
+#quiz1{background:#fff;border-radius:5px;padding:2rem;border:1px solid rgba(0,0,0,.2);min-width:550px;}
+#quiz1 img{max-width:100px;}
+.quiz button,.quiz .quizQuestions ul.questionAnswers li,.quiz .quizResults li{border-radius:2px}
+@media screen and (max-width:768px){
+#quiz1{min-width:unset!important}}
+.quiz{position:relative}
+.quiz ul{margin:0;padding:0;list-style:none}
+.quiz .hidden{display:none}
+.quiz button{font:inherit;font-size:14px;border:0;background:#4789fb;color:#fff;cursor:pointer;margin-bottom:5px;outline:0;padding:10px;width:100%}
+@media screen and(min-width:640px){.quiz button{width:auto}}
+.quiz button:hover{background:#3e77da}
+.quiz .quizQuestions{margin-bottom:10px}
+.quiz .quizQuestions>li{display:none;position:relative}
+.quiz .quizQuestions>li.showQuestion{display:block}
+.quiz .quizQuestions>li.disabled .questionAnswers li:hover:not(.selectedAnswer){background:initial}
+.quiz .quizQuestions>li.disabled .questionAnswers li label,.quiz .quizQuestions>li.disabled .questionAnswers li input[type=radio]{cursor:default}
+.quiz .quizQuestions>li .questionCount{font-size:14px}
+.quiz .quizQuestions>li .questionTitle{margin:0;padding:20px 0}
+.quiz .quizQuestions ul.questionAnswers{overflow:hidden}
+.quiz .quizQuestions ul.questionAnswers li{margin-top:5px;border:1px solid #e2e2e2}
+.quiz .quizQuestions ul.questionAnswers li:first-child{margin:0}
+.quiz .quizQuestions ul.questionAnswers li:hover{background:#ededed}
+.quiz .quizQuestions ul.questionAnswers li.selectedAnswer{background:#4789fb;color:#fff}
+.quiz .quizQuestions ul.questionAnswers li.incorrectAnswer{background:#f02d3a;color:#fff}
+.quiz .quizQuestions ul.questionAnswers li.correctAnswer{background:#2ecc71;color:#fff}
+.quiz .quizQuestions ul.questionAnswers label,.quiz .quizQuestions ul.questionAnswers input[type=radio]{cursor:pointer}
+.quiz .quizQuestions ul.questionAnswers input[type=radio]{margin:0;margin-right:10px;vertical-align:middle}
+.quiz .quizQuestions ul.questionAnswers label{display:inline-block;padding:13px;width:100%}
+.quiz .quizControls{margin-top:10px}
+.quiz .quizControls button{display:block}
+@media screen and(min-width:640px){.quiz .quizControls button{display:initial;margin-right:5px}}
+.quiz .quizControls button.ctrlPrev{background:#224178}
+.quiz .quizControls button.ctrlPrev:hover{background:#2f5ba7}
+.quiz .quizControls button.ctrlDone{display:none}
+.quiz .quizControls button.ctrlNext,.quiz .quizControls button.ctrlDone{float:right;background:#2ecc71}
+.quiz .quizControls button.ctrlNext:hover,.quiz .quizControls button.ctrlDone:hover{background:#28b162}
+.quiz .quizControls button.ctrlSkip{background:#9b59b6}
+.quiz .quizControls button.ctrlSkip:hover{background:#874d9e}
+.quiz .quizControls button.disabled{cursor:not-allowed;background:#e2e2e2}
+.quiz .quizControls button.disabled:hover{background:#e2e2e2}
+.quiz .quizResults ul{margin:20px 0 10px}
+.quiz .quizResults li{font-size:14px;padding:10px;border:1px solid;border-left:10px solid;margin-bottom:10px;line-height:1.5em}
+@media screen and(min-width:640px){.quiz .quizResults li{padding-left:20px}}
+.quiz .quizResults .viewResults{background:#2ecc71}
+.quiz .quizResults .viewResults:hover{background:#26aa5e}
+.quiz .quizResults .questionTitle{margin:5px 0 10px 10px}
+.quiz .quizResults .answeredCorrect{border-color:#2ecc71}
+.quiz .quizResults .answeredWrong{border-color:#f02d3a}
+</style>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <div class="container">
+    <div id="quiz1"></div>
+</div>
+    <script type="text/javascript">
+$("#quiz1").dlxQuiz({
+    quizData: {
+        questions: [
+            {
+                q: 'Gajah terbang keliatan apa?', //Pertanyaan
+                a: "Bohongnya", //Jawaban
+                options: [ //Pilihan Jawaban yang ditampilkan (bisa lebih dari 2)
+                //Pastikan agar jawaban ada dan sama dengan yang ada di pilihan ganda
+                //Jangan lupa untuk memberi koma (,) diakhir pilihan, khusus di pilihan terakhir tidak usah ditambahkan
+                    "Bohongnya",
+                    "Ekornya",
+                    'Belalainya'
+                ]
+            },
+            { //Pertanyaan dengan jawaban foto
+                q: "Yang manakah logo Moccatory?",
+                a: "<img src='https://2.bp.blogspot.com/-7tq9Kc0pc6c/XAiJL0GDOXI/AAAAAAAAAL8/H49iCHewBns9dx0Fk3P2HFFHg67qHGb7gCPcBGAYYCw/s256/Moccatory%2BLogo.png'/>",
+                options: [
+                 "https://2.bp.blogspot.com/-feLqz-v6wcE/Wu1mZNo8yjI/AAAAAAAAGnk/8B7lNr0WctolI-NC9YvwkflMhsOpMlnUQCLcBGAs/s200-c/Arlina%2BDesign%2BNew%2BBlogger.png",
+                    "<img src='https://qphl2.fs.quoracdn.net/main-thumb-285885725-200-qrzzgwqsirwuwivotbgkiahvwnqzvmtl.jpeg'/>",
+                    "<img src='https://2.bp.blogspot.com/-7tq9Kc0pc6c/XAiJL0GDOXI/AAAAAAAAAL8/H49iCHewBns9dx0Fk3P2HFFHg67qHGb7gCPcBGAYYCw/s256/Moccatory%2BLogo.png'/>"
+                ]
+            },
+            { //Pertanyaan dengan jawaban singkat
+                q: "Lumba-lumba minum?",
+                a: "Air",
+                options: ["Susu", "Air","Es Jeruk"]
+            },
+            {
+                q: "Apakah CSS adalah bahasa pemrograman?",
+                a: "Tidak",
+                options: ["Iya", "Tidak", "Mungkin"]
+            },
+            { //Untuk pertanyaan terakhir, tidak perlu diberi koma (,) dibagian akhir script-nya
+                q: "Nama anak laki-laki Naruto adalah",
+                a: "Boruto",
+                options: ["Boruto", "Sasuke","Sakura","Hinata"]
+            }
+
+        ]
+    }
+});
+</script>
+  </body>
+</html>
