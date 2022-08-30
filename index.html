@@ -2,7 +2,31 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-         <script>
+
+    <style>
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to top right, darken(dodgerblue, 10%) 0%, dodgerblue 100%);
+}
+#quiz1 {
+    width: 560px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 3px;
+}
+    </style>
+<title>Quiz v3</title>
+</head>
+<body>
+<div class="container">
+    <div id="quiz1"></div>
+</div>
+   
+</body>
+                  <script>
         $("#quiz1").dlxQuiz({
     quizData: {
         questions: [
@@ -45,27 +69,4 @@
 });
 
     </script>
-    <style>
-    .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(to top right, darken(dodgerblue, 10%) 0%, dodgerblue 100%);
-}
-#quiz1 {
-    width: 560px;
-    background: #fff;
-    padding: 2rem;
-    border-radius: 3px;
-}
-    </style>
-<title>Quiz v3</title>
-</head>
-<body>
-<div class="container">
-    <div id="quiz1"></div>
-</div>
-   
-</body>
 </html>
