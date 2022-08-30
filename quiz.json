@@ -1,0 +1,83 @@
+// quiz.json
+[{
+  "questions": [{
+    "question": "What's my favorite color?",
+    "description": "Optional Description",
+    "answers": [{
+      "answer": "Red",
+      "alert": "<strong>The answer is incorrect.</strong> See <a href=\"#\"> for details!</a>",
+      "true": 0
+    },
+    {
+      "answer": "Black",
+      "alert": "<strong>Exactly!</strong> See <a href=\"#\"> for details!</a>",
+      "true": 1
+    },
+    {
+      "answer": "Blue",
+      "alert": "<strong>The answer is incorrect.</strong> See <a href=\"#\"> for details!</a>",
+      "true": 0
+    }]
+  },
+  {
+    "question": "What is my favorite programming language?",
+    "description": null,
+    "answers": [{
+      "answer": "PHP",
+      "alert": "<strong>The answer is incorrect.</strong> See <a href=\"#\"> for details!</a>",
+      "true": 0
+    },
+    {
+      "answer": "C++",
+      "alert": "<strong>The answer is incorrect.</strong> See <a href=\"#\"> for details!</a>",
+      "true": 0
+    },
+    {
+      "answer": "JavaScript",
+      "alert": "<strong>Exactly!</strong> See <a href=\"#\"> for details!</a>",
+      "true": 1
+    }]
+  },
+  {
+    "question": "What is my favorite country?",
+    "description": null,
+    "answers": [{
+      "answer": "UK",
+      "alert": "<strong>Exactly!</strong> See <a href=\"#\"> for details!</a>",
+      "true": 1
+    },
+    {
+      "answer": "US",
+      "alert": "<strong>The answer is incorrect.</strong> See <a href=\"#\"> for details!</a>",
+      "true": 0
+    },
+    {
+      "answer": "France",
+      "alert": "<strong>The answer is incorrect.</strong> See <a href=\"#\"> for details!</a>",
+      "true": 0
+    }]
+  },
+  {
+    "question": "Who is my favorite celebrity?",
+    "description": null,
+    "answers": [{
+      "answer": "Johnny Depp",
+      "alert": "<strong>The answer is incorrect.</strong> See <a href=\"#\"> for details!</a>",
+      "true": 0
+    },
+    {
+      "answer": "Emma Watson",
+      "alert": "<strong>The answer is incorrect.</strong> See <a href=\"#\"> for details!</a>",
+      "true": 0
+    },
+    {
+      "answer": "Arnold Schwarzenegger",
+      "alert": "<strong>Exactly!</strong> See <a href=\"#\"> for details!</a>",
+      "true": 1
+    }]
+  }],
+  "params": {
+    "intro": 1,
+    "intromessage": "A jQuery plugin that lets you create responsive and beautiful quizzes on the page. "
+  }
+}]
